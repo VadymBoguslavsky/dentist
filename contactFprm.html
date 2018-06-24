@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="formStyle.css">
+  <link rel="stylesheet" href="normalize.css">
+  <script src="formScript.js"></script>
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__logo logo">
+          <img src="img/Logo.png" alt="logo">
+        </div>
+        <button class="header__button">Log In Now</button>
+      </div>
+      <div class="top">
+        <h1>Home of Dentistry</h1>
+        <p>Denteez was created by dentists for dentistry in order to make the life of everyone involved in dentistry easier</p>
+      </div>
+    </header>
+    <section class="main">
+      <div class="form">
+        <form action="">
+          <div class="form__wrapper">
+            <p class="form__title ">Fields marked “*” are required</p>
+            <label for="select">Enquiry Type *</label>
+            <select name="enquiry" id="select" class="block input-style form__select" id="js-select"></select>
+            <input type="text" name="other" class="block input-style">
+            <div>
+              <label for="dentist" class="width label-margin">Name *</label>
+              <label for="email" class="width">Email *</label>
+            </div>
+            <div>
+              <input type="text" name="name" id="dentist" placeholder="Dentist" class="width input-style margin ">
+              <input type="email" name="email" id="email" placeholder="rachelm@gmail.com" class="width input-style">
+            </div>
+            <label for="subject" class="block">Subject *</label>
+            <input type="text" name="subject" id="subject" class="block input-style">
+            <label for="description">Description *</label>
+            <textarea name="description" id="description" class="block input-style"></textarea>
+            <div class="form__image">
+              <label for="image_uploads">Add photo
+                <span class="img__input">Minimum size of 300x300 jpeg ipg png 5 MB</span>
+              </label>
+              <input class="input" type="file"  id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+
+            </div>
+            <div class="preview">
+              <p>No files currently selected for upload</p>
+            </div>
+          </div>
+         
+            <button class="form__button">Submit</button>
+          
+        </form>
+      </div>
+    </section>
+    <div class="about">
+      <h1 class="about__header">About Denteez</h1>
+      <div class="about__text">
+        <p class="text1">Why is it so difficult to find what you are looking for in dentistry? Whenether it is the latest advancement 
+          in technology or techniques or simply a rewiew or understanding of the vast amount of products? Perhaps finding 
+          someone to just fix your broken equipment or simply hiring new staff or looking for that new job?</p>
+        <p class="text2">Our mission is to give every dental professional the possibility to discuss and share all aspects of their
+           profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so 
+           every dental professional can find what thay are looking for quicly and easily all in one place.</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div  class="footer__wrapper">
+        <span>Denteez Copyright 2015</span>
+        <div class="footer__links">
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

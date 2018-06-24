@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="body-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__logo logo">
+          <a href="#">
+            <img src="img/Logo.png" alt="logo">
+          </a>
+        </div>
+        <form action="#" class="header__form">
+          <input type="search" class="search" id="site-search" name="q" placeholder="Company Name" aria-label="Search through site content">
+          <button class="search__button"></button>
+        </form>
+        <div class="header__notifications">
+          <a href="#">
+            <img src="img/Chat.png" alt=""> </a>
+          <a href="#">
+            <img src="img/Notifications.png" alt="">
+          </a>
+        </div>
+        <div class="header__name">
+          <img src="img/Image.png" alt="">
+          <span>Maximillian Beekeeper</span>
+        </div>
+      </div>
+    </header>
+    <div class="layout">
+      <div class="main__menu">
+        <ul class="menu__list">
+          <li class="menu__items">
+            <a href="#">
+              <img src="img/Feed.png" alt="">
+              <span>Feed</span>
+            </a>
+          </li>
+          <li class="menu__items">
+            <a href="#">
+              <img src="img/Ask.png" alt="">
+              <span>Ask a Collegue</span>
+            </a>
+          </li>
+          <li class="menu__items">
+            <a href="#">
+              <img src="img/Companies.png" alt="">
+              <span>Companies</span>
+            </a>
+          </li>
+          <li class="menu__items">
+            <a href="#">
+              <img src="img/Services.png" alt="">
+              <span>Servise Directory</span>
+            </a>
+          </li>
+        </ul>
+        <div class="advertisement">
+          <p class="gray-text font-middle">Advertisement</p>
+          <img src="img/Слой 1.png" alt="">
+          <div class="made_by ads-by gray-text">Ads By Denteez.com</div>
+        </div>
+        <div class="featured">
+          <span class="gray-text font-middle margin-right">Featured Companies</span>
+          <a class="link_black font-middle" href="#">See All</a>
+          <div class="featured__items">
+            <div class="featured__name">
+              <img src="img/Layer 39.png" alt="">
+              <div class="company__name">
+                <div class="name">Company Name</div>
+                <div class="gray-text font-middle">Manufacturer</div>
+                <div class="gray-text font-middle">Belgrade, Serbia</div>
+                <a class="link_black font-small" href="#">Follow Now</a>
+              </div>
+            </div>
+            <div class="featured__name">
+              <img src="img/Layer 40.png" alt="">
+              <div class="company__name">
+                <div class="name">Company Name</div>
+                <div class="gray-text font-middle">Service Provider</div>
+                <div class="gray-text font-middle">New York, USA</div>
+                <a class="link_black font-small" href="#">Follow Now</a>
+              </div>
+            </div>
+            <div class="featured__name">
+              <img src="img/Layer 41.png" alt="">
+              <div class="company__name">
+                <div class="name">Company Name</div>
+                <div class="gray-text font-middle">Supplier</div>
+                <div class="gray-text font-middle">London, England</div>
+                <a class="link_black font-small" href="#">Follow Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__services">
+        <div class="services__top">
+          <h2 class="inline services__title">Service Directory</h2>
+          <button class="servises__btn inline">Add New Service</button>
+        </div>
+        <div class="services__items">
+          <template id="template">
+            <div class="services__item">
+              <div class="image">
+                <a href="#">
+                  <img class="services__icon" src="img/Shape 51.png" alt="">
+                </a>
+              </div>
+              <a href="#" class="services__name">Name</a>
+            </div>
+          </template>
+        </div>
+      </div>
+      <div class="main__people">
+        <div class="find__people">
+          <span class="gray-text font-middle">People you may know</span>
+          <a class="link_black font-middle" href="#">See All</a>
+          <div class="people">
+            <div class="people__name">
+              <p>Dennis Adams</p>
+              <img src="img/Layer 36.png" alt="">
+              <div class="people__info">
+                <div class="gray-text font-middle">Dentist (Practice Owner)</div>
+                <div class="gray-text font-middle">London, England</div>
+                <a class="link_black font-small" href="#">Add Friend</a>
+              </div>
+            </div>
+            <div class="people__name">
+              <p class="name">Mary Carpenter</p>
+              <img src="img/Layer 37.png" alt="">
+              <div class="people__info">
+                <div class="gray-text font-middle">Dentist (Practice Owner)</div>
+                <div class="gray-text font-middle">Belgrade, Serbia</div>
+                <a class="link_black font-small" href="#">Add Friend</a>
+              </div>
+            </div>
+            <div class="people__name">
+              <p class="name">Danielle Salazar</p>
+              <img src="img/Layer 39.png" alt="">
+              <div class="people__info">
+                <div class="gray-text font-middle">Dentist (Practice Owner)</div>
+                <div class="gray-text font-middle">Paris, France</div>
+                <a class="link_black font-small" href="#">Add Friend</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__products">
+          <span class="gray-text font-middle margin-right">Featured Products</span>
+          <a class="link_black font-middle" href="#">See All</a>
+          <div class="people__name">
+            <p class="name">Product Name</p>
+            <img src="img/Layer 34.png" alt="">
+            <div class="people__info">
+              <div class="gray-text font-middle">Product Short Description. The quick brown fox jumps over the laze dog</div>
+            </div>
+          </div>
+          <div class="people__name">
+            <p class="name">Product Name</p>
+            <img src="img/Layer 35.png" alt="">
+            <div class="people__info">
+              <div class="gray-text font-middle">Product Short Description. The quick brown fox jumps over the laze dog</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advertisement line">
+          <p class="gray-text">Advertisement</p>
+          <img src="img/Слой 2.png" alt="">
+          <p class="gray-text ads-by">Ads By Denteez.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
