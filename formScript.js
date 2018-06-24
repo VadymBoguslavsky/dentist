@@ -24,9 +24,9 @@ fetch('http://504080.com/api/v1/directories/enquiry-types')
 		console.log('Fetch Error :-S', err);
 	});
 
-  var input = document.querySelector('.image_uploads');
+  var input = document.querySelector('#image_uploads');
   var preview = document.querySelector('.preview');
-  console.log(input.nodeValue)
+  console.log(input)
   // input.addEventListener('change', updateImageDisplay);function updateImageDisplay() {
   //   while(preview.firstChild) {
   //     preview.removeChild(preview.firstChild);
