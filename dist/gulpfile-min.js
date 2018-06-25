@@ -1,0 +1,1 @@
+var gulp=require("gulp"),cssmin=require("gulp-cssmin"),rename=require("gulp-rename"),sourcemaps=require("gulp-sourcemaps"),minify=require("gulp-minify");gulp.task("minifycss",function(){gulp.src("*.css").pipe(cssmin()).pipe(rename({suffix:".min"})).pipe(gulp.dest("dist"))}),gulp.task("compress",function(){gulp.src("*.js").pipe(minify()).pipe(gulp.dest("dist"))});
