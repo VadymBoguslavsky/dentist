@@ -24,37 +24,35 @@
     </header>
     <section class="main">
       <div class="form">
-        <form action="">
+        <form action="" onsubmit="return false" method="POST" class="js-post-form">
           <div class="form__wrapper">
             <p class="form__title ">Fields marked “*” are required</p>
             <label for="select">Enquiry Type *</label>
             <select name="enquiry" id="select" class="block input-style form__select" id="js-select"></select>
-            <input type="text" name="other" class="block input-style">
+            <input type="text" name="other" class="block input-style" >
             <div>
               <label for="dentist" class="width label-margin">Name *</label>
               <label for="email" class="width">Email *</label>
             </div>
             <div>
-              <input type="text" name="name" id="dentist" placeholder="Dentist" class="width input-style margin ">
-              <input type="email" name="email" id="email" placeholder="rachelm@gmail.com" class="width input-style">
+              <input type="text" name="name" id="dentist" placeholder="Dentist" class="width input-style margin " >
+              <input type="email" name="email" id="email" placeholder="rachelm@gmail.com" class="width input-style" >
             </div>
             <label for="subject" class="block">Subject *</label>
-            <input type="text" name="subject" id="subject" class="block input-style">
+            <input type="text" name="subject" id="subject" class="block input-style" >
             <label for="description">Description *</label>
-            <textarea name="description" id="description" class="block input-style"></textarea>
+            <textarea name="description" id="description" class="block input-style" ></textarea>
             <div class="form__image">
               <div class="image-wrapper">
                 <label for="image_uploads">Add photo
                   <span class="img__input">Minimum size of 300x300 jpeg ipg png 5 MB</span>
                 </label>
-                <input class="input-image" type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+                <p><input class="input-image" type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple></p>
               </div>
               <div id="fileDisplayArea"></div>
             </div>
           </div>
-
-          <button class="form__button">Submit</button>
-
+          <button type="submit" onclick="postData();" class="form__button">Submit</button>
         </form>
       </div>
     </section>
@@ -81,6 +79,7 @@
       </div>
     </footer>
   </div>
+
 </body>
 
 </html>
